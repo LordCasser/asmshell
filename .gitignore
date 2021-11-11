@@ -1,5 +1,4 @@
-*.pyc
-toy/
 deps/
-.gopath/
-
+asmshell
+.git
+TODO.*

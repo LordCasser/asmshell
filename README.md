@@ -20,46 +20,38 @@ Useful functions
 
 	Shell like commands           : fragments, run linux commands...etc
 	Handled like a shell          : Ctrl-P/Ctrl-N, Ctrl-A/Ctrl-E, Ctrl-H/Ctr-D...etc
-	Cross Platform(depends on go) : *NIX, OSX, Windows
-	APIs                          : see go/examples
+	Cross Platform(depends on go) : *NIX, OSX
 
 ## Install
-Go language, unicorn-engine and keystone-engine are necessary, but the installation process is automated with Makefile. 
+Go language, unicorn-engine and keystone-engine are necessary, but the installation process is automated with Makefile. So forget about these things, and just make it.
 
-<!-- If you are windows user, you can use [pre-compiled binary](https://github.com/poppycompass/asmshell/prebuild). -->
 
 ### Linux/Mac
 
-1. Install [CMake](https://cmake.org/download/)/Python(2.X,virtualenv)/make/Compiler(gcc,g++)/Git
+1. Install [CMake](https://cmake.org/download/)/make/Compiler(gcc,g++)/Git
 
 2. Build asmshell
 
-	`$ virtualenv2 ENV && . ENV/bin/activate`
-	`$ git clone https://github.com/poppycompass/asmshell`  
+	`$ git clone https://github.com/LordCasser/asmshell`  
 	`$ cd asmshell && make`  
-	`$ ./asmshell.exe -h`  
-
-If you have already installed go and unicorn, keystone and capstone, run this.
-
-	$ make symlink deps asmshell
+	`$ ./asmshell -h`  
 
 ### Windows
 
-TODO
-
+NO WINDOWS!!!
 
 ## Usage
 
 ### Help
-	$ ./asmshell.exe [-h/--help]
+	$ ./asmshell [-h/--help]
 
 ### x86
-	$ ./asmshell.exe
-![x86 mode](https://github.com/poppycompass/asmshell/blob/master/images/go_x86.jpg)
+	$ ./asmshell
+![x86 mode](https://i.loli.net/2021/11/11/5pSidhzn6RU34Yx.jpg)
 
 ### x64
-	$ ./asmshell.exe -a x64
-![x64 mode](https://github.com/poppycompass/asmshell/blob/master/images/go_x64.jpg)
+	$ ./asmshell -arch x64
+![x64 mode](https://i.loli.net/2021/11/11/sx4GHcR5NweKaLB.jpg)
 
 
 ## Tutorial
@@ -119,9 +111,8 @@ If you want to register binary code, change filename to "<filename>.bin".(".bin"
 
 
 ## Contribution
-I am not an architectual expert. Therefore, I think there are many bugs and strangeness in this program.
-If you want to contribute, please pick up something from our [Github issues](https://github.com/poppycompass/asmshell/issues).
-We also maintain a list of more challenged problems in a [TODO.txt](https://github.com/poppycompass/asmshell/blob/master/TODO.txt).
+
+If you want to contribute, please pick up something from our [Github issues](https://github.com/LordCasser/asmshell/issues).
 
 
 ## License
@@ -132,3 +123,6 @@ The software in this repository is covered by [the MIT license](LICENSE).
 ## Author
 
 poppycompass (t0g0v31dk at gmail dot com)
+
+I fork it from poppycompass and replaced and repaired some unmaintained libraries, thanks for [azurity](https://github.com/azurity),  it be installed with one click now.
+
