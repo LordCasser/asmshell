@@ -2,3 +2,4 @@ deps/
 asmshell
 .git
 TODO.*
+.idea
