@@ -124,5 +124,5 @@ The software in this repository is covered by [the MIT license](LICENSE).
 
 poppycompass (t0g0v31dk at gmail dot com)
 
-I fork it from poppycompass and replaced and repaired some unmaintained libraries, thanks for [azurity](https://github.com/azurity),  it be installed with one click now.
+I fork it from poppycompass, replaced and repaired some unmaintained libraries, thanks for [azurity](https://github.com/azurity),  it be installed with one click now.
 
