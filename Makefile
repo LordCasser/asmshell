@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := build
-ALL_TARGETS := unicorn keystone capstone asmshell
+ALL_TARGETS := prepare unicorn keystone capstone asmshell
 .PHONY: clean ${ALL_TARGETS}
 
 all: ${ALL_TARGETS}
@@ -17,6 +17,9 @@ ARCH := $(shell uname -m)
 export C_INCLUDE_PATH=$(PWD)/deps/install/include
 export CPLUS_INCLUDE_PATH=$(PWD)/deps/install/include
 export CGO_LDFLAGS=-L$(PWD)/deps/install/lib -lunicorn -lkeystone -lcapstone -lm
+
+prepare:
+    mkdir -p deps/install
 
 unicorn:
 	cd deps && [ ! -e unicorn ] && \
