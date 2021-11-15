@@ -1,4 +1,7 @@
-deps/
+./deps/install/*
+./deps/capstone
+./deps/keystone
+./deps/unicorn
 asmshell
 .git
 TODO.*
